@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            margin-left: 80%;
+            position: absolute; 
+        }
+        .asf{
+            width: 500px;
+            position: absolute; 
+            left: 200px;
+            top:200px;
+            color: aliceblue;
+        }
+        .ak{
+            top:150px;
+            left: 900px;
+            width: 250px;
+            position: absolute; 
+            border: 1px solid black;
+            padding: 30px;
+            box-shadow: -1px 1px 7px 1px black; 
+            background-color: azure;          
+        }
+        button{
+            background-color: chartreuse;
+            border-radius: 50px;
+            border-color: black;
+            width: 180px;
+            
+        }
+        .abu{
+            position: absolute; 
+            bottom: 100px;
+            color: aliceblue;
+        }
+        body{
+            
+            
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("https://t3.ftcdn.net/jpg/03/91/46/10/360_F_391461057_5P0BOWl4lY442Zoo9rzEeJU0S2c1WDZR.jpg");
+        }
+        .sar{
+           
+            color: black;
+        }
+        select{
+            width: 176px;
+            
+        }
+        .sar:hover{
+           
+          background-color:blue;
+       }
+       .and:hover{
+           
+           background-color:blue;
+        }
+         
+        
+        
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="project.html" ><i class="fa-home"></i></a>&nbsp;&nbsp;&nbsp;
+        <a href="products.html">Features</a>&nbsp;&nbsp;&nbsp;
+        <a href="vehicle.html">Reviews</a>&nbsp;&nbsp;&nbsp;
+        <button type="button">Get Started</button>
+    </nav>
+    
+    <div class="asf">
+        <h1>Fly Makes You Faster</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid repellendus laudantium aspernatur, cum odio vero commodi iure consequatur quis modi dolore quos fugit repellat adipisci, velit enim esse ab ducimus quasi deleniti dolores quibusdam corporis! Libero commodi praesentium doloremque in.</p>
+            <button class="and" type="button">See Pricing</button>
+    </div>
+
+    <div class="ak">
+        <h1>Sign Up For Free</h1><br<br>
+        <form name="asfak" onsubmit="return validate()" action="vehicle.html">
+            <input name="name" type="text" placeholder="Full Name" ><br><br>
+            <input name="email" type="email" placeholder="Email id" ><br><br>
+            <input name="number" type="tel" placeholder="Mobile No" ><br><br>
+            <!-- <select>
+                <option>Type</option>
+                <option>facebook</option>
+                <option>google</option>
+                <option>email</option>vkjv
+            </select><br><br> -->
+            <button class="sar" type="submit">Register</button>
+        </form>
+    </div>
+
+    <div class="abu">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur modi veritatis impedit maxime ipsa natus eos debitis non? Eos hic quidem ea quae dolorem iusto provident, minima illum soluta! Molestias id inventore aliquid, iusto odio error optio magnam illum nulla voluptas laborum iste. Ab similique omnis, sunt, adipisci doloremque praesentium pariatur sed exercitationem vel eligendi et commodi rerum facere soluta!</p>
+    
+    </div>
+
+    <script>
+        function validate(){
+            let name = document.forms['asfak']['name'].value;
+            let email = document.forms['asfak']['email'].value;
+            let number = document.forms['asfak']['number'].value;
+
+            if((name&&email&&number)==""){
+                alert("wrong form");
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+       
+    </script>
+
+</body>
+</html>
